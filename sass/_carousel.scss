@@ -1,0 +1,11 @@
+.idb-carousel{
+    height: 15rem;
+    width: 100%;
+    &__item{
+        height: 15rem;
+    }
+    &__image{
+        height: 15rem;
+        object-fit: cover;
+    }
+}

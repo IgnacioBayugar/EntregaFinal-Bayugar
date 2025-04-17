@@ -1,0 +1,34 @@
+.idb-nav{
+    @include palette ($nav_bg, $nav_txt);
+    &__brand{
+        --bs-navbar-brand-font-size: 0rem;
+        &--text{
+            color: white;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+            font-size: map-get($txt-size, brand, desk);
+            &:hover{
+                color: darken(white, 10%);
+            }
+        }
+    }
+    &__action{
+        @include btn ($nav_bg, $nav_txt, 0.3rem, groove, 0rem, $nav_txt);
+        width: 7.5rem;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 600;
+        &--active{
+            background-color: darken($nav_bg, 5%);
+            color: darken(white, 25%);
+        }
+    }
+    &__search{
+        border-radius: 0.3rem;
+        border: none;
+    }
+    &__submit{
+        @include btn (white, white, 0.3rem, groove, 0rem, $nav_txt);
+        width: 4rem;
+    }
+}

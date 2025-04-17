@@ -1,0 +1,30 @@
+@mixin sizing($w, $h){ //para tamaño de contenedores
+    width: $w;
+    height: $h;
+}
+@mixin palette($bg-color, $color){ //para usar la paleta de colores de la pagina
+    background-color: $bg-color;
+    color: $color;
+}
+@mixin borders($b-radius, $b-style, $b-color, $b-width){ //para bordes personalizados
+    border-radius: $b-radius;
+    border-style: $b-style;
+    border-color: $b-color;
+    border-width: $b-width;
+}
+@mixin btn ($bg-color, $color, $b-radius, $b-style, $b-width, $b-color){ //para botones con transitions y hover prefabricados
+    background-color: $bg-color;
+    color: $color;
+    border-radius: $b-radius;
+    border-style: $b-style;
+    border-color: $b-color;
+    border-width: $b-width;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover{
+        color: $nav_txt;
+        background-color: darken($bg-color, 10%);
+        transform: scale(1.05);
+    }
+}

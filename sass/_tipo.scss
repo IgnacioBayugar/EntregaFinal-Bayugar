@@ -1,0 +1,19 @@
+$txt-size: (
+    brand: (desk: 2.30rem, tablet: 2.25rem, mobile: 2rem),
+    brand-alt: (desk: 1.50rem, tablet: 1.25rem, mobile: 1rem),
+    card-ttl: (desk: 1.4rem, tablet: 1.4rem, mobile: 1.375rem),
+    card: (desk: 0.95rem, tablet: 0.9375rem, mobile: 0.875rem),
+    base: (desk: 1.125rem, tablet: 1rem, mobile: 0.875rem),
+    secondary: (desk: 0.9375rem, tablet: 0.875, mobile: 0.8125rem)
+);
+
+.idb-category{
+    font-size: 1.6rem;
+    text-align: start;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.1rem;
+}

@@ -1,0 +1,13 @@
+.idb-pagination{
+    &__action{
+        background-color: $nav_bg;
+        color: white;
+        border-color: $nav_bg;
+    }
+    &__page{
+        background-color: white;
+        color: $nav_bg;
+        border-color: $nav_bg;
+        width: fit-content;
+    }
+}
