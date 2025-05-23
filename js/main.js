@@ -44,6 +44,10 @@
     modalRegister: document.getElementById('modalRegister'),
     modalPurchaseData: document.getElementById('modalPurchaseData'),
     formPurchaseData: document.getElementById('formPurchaseData'),
+    userInfoSpan: document.getElementById('user-info'),
+    loginBtn: document.getElementById('login-btn'),
+    registerBtn: document.getElementById('register-btn'),
+    logoutBtn: document.getElementById('logout-btn'),
   };
   //inicialización
   function init() {
@@ -353,10 +357,12 @@
     if (currentUser) {
       dom.userInfoSpan.textContent = `Hola, ${currentUser.username}`;
       dom.loginBtn.style.display = 'none';
+      dom.registerBtn.style.display = 'none';
       dom.logoutBtn.style.display = 'inline-block';
     } else {
       dom.userInfoSpan.textContent = '';
       dom.loginBtn.style.display = 'inline-block';
+      dom.registerBtn.style.display = 'inline-block';
       dom.logoutBtn.style.display = 'none';
     }
   }

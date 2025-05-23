@@ -53,12 +53,14 @@
                   </form>
                   <ul class="navbar-nav d-flex align-items-center ms-auto mb-2 me-5 mb-lg-0">
                     <li class="nav-item">
-                      <button type="button" class="btn btn-outline-light idb-nav__action me-2" data-bs-toggle="modal" data-bs-target="#modalLogin">INICIAR SESIÓN</button>
+                      <button id="login-btn" type="button" class="btn btn-outline-light idb-nav__action me-2" data-bs-toggle="modal" data-bs-target="#modalLogin">INICIAR SESIÓN</button>
                     </li>
                     <li class="nav-item">
-                      <button type="button" class="btn btn-primary idb-nav__action" data-bs-toggle="modal" data-bs-target="#modalRegister">REGISTRARSE</button>
+                      <button id="register-btn" type="button" class="btn btn-primary idb-nav__action" data-bs-toggle="modal" data-bs-target="#modalRegister">REGISTRARSE</button>
                     </li>
                   </ul>
+                  <span id="user-info" class="text-light me-2"></span>
+                  <button id="logout-btn" class="btn btn-outline-light idb-nav__action me-2" style="display:none;">Cerrar sesión</button>
                 </div>
               </div>
             </div>
