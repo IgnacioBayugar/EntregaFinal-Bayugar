@@ -127,7 +127,7 @@
     dom.formPurchaseData?.addEventListener('submit', function(e) {
       e.preventDefault();
       purchaseData = {
-        name: document.getElementById('nameComprador').value,
+        name: document.getElementById('nombreComprador').value,
         direction: document.getElementById('direccionComprador').value,
         email: document.getElementById('emailComprador').value,
         paymentMethod: document.getElementById('metodoPago').value
@@ -244,7 +244,7 @@
           $${total.toFixed(2)}
         </div>
         <div>
-          <button class="btn btn-sm btn-outline-secondary me-1">−</button>
+          <button class="btn btn-sm btn-outline-secondary me-1">-</button>
           <button class="btn btn-sm btn-outline-secondary me-1">+</button>
           <button class="btn btn-sm btn-danger">&times;</button>
         </div>`;

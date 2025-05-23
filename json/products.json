@@ -3,8 +3,8 @@
   { "id": 2, "name": "Air fryer", "price": 180000, "category": "Electro", "img":"./assets/airfryer_product.jpg"},
   { "id": 3, "name": "Horno electrico", "price": 195000, "category": "Electro", "img":"./assets/image_placeholder.png"},
   { "id": 4, "name": "Mini Pimmer", "price": 65000, "category": "Electro", "img":"./assets/image_placeholder.png"},
-  { "id": 5, "name": "Microondas", "price": 220000, "category": "Electro", "img":"./assets/image_placeholder.png"},
-  { "id": 6, "name": "Cafetera eléctrica", "price": 120000, "category": "Electro", "img":"./assets/image_placeholder.png"},
+  { "id": 5, "name": "Cafetera eléctrica", "price": 120000, "category": "Electro", "img":"./assets/cafetera_product.jpg"},
+  { "id": 6, "name": "Microondas", "price": 220000, "category": "Electro", "img":"./assets/image_placeholder.png"},
 
   { "id": 7, "name": "Silla plástica", "price": 35000, "category": "Hogar", "img":"./assets/image_placeholder.png"},
   { "id": 8, "name": "Mesa plegable", "price": 90000, "category": "Hogar", "img":"./assets/image_placeholder.png"},
@@ -16,7 +16,7 @@
   { "id": 13, "name": "Aceite de girasol 1L", "price": 2500, "category": "Almacén", "img":"./assets/aceite_product.jpg"},
   { "id": 14, "name": "Arroz largo fino 1kg", "price": 1800, "category": "Almacén", "img":"./assets/image_placeholder.png"},
   { "id": 15, "name": "Harina 000 1kg", "price": 1500, "category": "Almacén", "img":"./assets/image_placeholder.png"},
-  { "id": 16, "name": "Yerba mate 500g", "price": 3500, "category": "Almacén", "img":"./assets/image_placeholder.png"},
+  { "id": 16, "name": "Yerba mate 500g", "price": 3500, "category": "Almacén", "img":"./assets/yerba_product.jpg"},
   { "id": 17, "name": "Galletitas surtidas", "price": 2200, "category": "Almacén", "img":"./assets/image_placeholder.png"},
   { "id": 18, "name": "Mermelada de durazno", "price": 3200, "category": "Almacén", "img":"./assets/image_placeholder.png"},
 
@@ -24,6 +24,6 @@
   { "id": 20, "name": "Raqueta de tenis", "price": 60000, "category": "Deportes", "img":"./assets/image_placeholder.png"},
   { "id": 21, "name": "Bicicleta mountain bike", "price": 420000, "category": "Deportes", "img":"./assets/mountainbike_product.jpg"},
   { "id": 22, "name": "Guantes de boxeo", "price": 18000, "category": "Deportes", "img":"./assets/image_placeholder.png"},
-  { "id": 23, "name": "Zapatillas running", "price": 65000, "category": "Deportes", "img":"./assets/image_placeholder.png"},
+  { "id": 23, "name": "Zapatillas deportivas", "price": 65000, "category": "Deportes", "img":"./assets/zapatillasdeportivas_product.jpg"},
   { "id": 24, "name": "Bolso deportivo", "price": 25000, "category": "Deportes", "img":"./assets/image_placeholder.png"}
 ]
