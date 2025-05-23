@@ -1,5 +1,6 @@
 .idb-nav{
-    @include palette ($nav_bg, $nav_txt);
+    border-bottom: 0.12rem groove $cart-accent;
+    @include palette ($primary, $text-inverse);
     &__brand{
         --bs-navbar-brand-font-size: 0rem;
         &--text{
@@ -13,14 +14,14 @@
         }
     }
     &__action{
-        @include btn ($nav_bg, $nav_txt, 0.3rem, groove, 0rem, $nav_txt);
-        width: 7.5rem;
+        @include btn ($primary, $text-inverse, 0.3rem, groove, 0rem, $text-inverse);
+        width: 10rem;
         font-size: 1rem;
         text-align: center;
-        font-weight: 600;
+        font-weight: 500;
         &--active{
-            background-color: darken($nav_bg, 5%);
-            color: darken(white, 25%);
+            background-color: darken($primary, 5%);
+            color: darken($text-inverse, 25%);
         }
     }
     &__search{
@@ -28,7 +29,7 @@
         border: none;
     }
     &__submit{
-        @include btn (white, white, 0.3rem, groove, 0rem, $nav_txt);
+        @include btn (white, white, 0.3rem, groove, 0rem, $text-inverse);
         width: 4rem;
     }
 }

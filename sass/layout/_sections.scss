@@ -1,0 +1,14 @@
+.idb-section {
+  background: #fff;
+  border-top: 0.12rem groove $primary;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+
+.idb-section__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #264653;
+}

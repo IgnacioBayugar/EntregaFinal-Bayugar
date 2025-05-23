@@ -1,14 +1,3 @@
-.idb-category {
-  font-size: 1.6rem;
-  text-align: start;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-  color: white;
-  letter-spacing: 0.1rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +5,9 @@
 }
 
 .idb-nav {
-  background-color: #002d64;
-  color: white;
+  border-bottom: 0.12rem groove #f59e42;
+  background-color: #264653;
+  color: #ffffff;
 }
 .idb-nav__brand {
   --bs-navbar-brand-font-size: 0rem;
@@ -32,26 +22,26 @@
   color: rgb(229.5, 229.5, 229.5);
 }
 .idb-nav__action {
-  background-color: #002d64;
-  color: white;
+  background-color: #264653;
+  color: #ffffff;
   border-radius: 0.3rem;
   border-style: groove;
-  border-color: white;
+  border-color: #ffffff;
   border-width: 0rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 7.5rem;
+  width: 10rem;
   font-size: 1rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 .idb-nav__action:hover {
-  color: white;
-  background-color: rgb(0, 22.05, 49);
+  color: #ffffff;
+  background-color: rgb(21.9834710744, 40.4958677686, 48.0165289256);
   transform: scale(1.05);
 }
 .idb-nav__action--active {
-  background-color: rgb(0, 33.525, 74.5);
+  background-color: rgb(29.9917355372, 55.2479338843, 65.5082644628);
   color: rgb(191.25, 191.25, 191.25);
 }
 .idb-nav__search {
@@ -63,20 +53,20 @@
   color: white;
   border-radius: 0.3rem;
   border-style: groove;
-  border-color: white;
+  border-color: #ffffff;
   border-width: 0rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   width: 4rem;
 }
 .idb-nav__submit:hover {
-  color: white;
+  color: #ffffff;
   background-color: rgb(229.5, 229.5, 229.5);
   transform: scale(1.05);
 }
 
 .idb-gallery {
-  background-color: #0048a0;
+  background-color: #f4f7fa;
 }
 
 .idb-carousel {
@@ -92,88 +82,139 @@
 }
 
 .idb-pagination__action {
-  background-color: #002d64;
+  background-color: #264653;
   color: white;
-  border-color: #002d64;
+  border-color: #f4f7fa;
 }
 .idb-pagination__page {
   background-color: white;
-  color: #002d64;
-  border-color: #002d64;
+  color: #f4f7fa;
+  border-color: #f4f7fa;
   width: fit-content;
 }
 
 .idb-card {
   width: 13rem;
-  height: 18rem;
-  background-color: white;
-  color: none;
-  border-radius: 0.3rem;
-  border-style: none;
-  border-color: none;
-  border-width: none;
+  height: 18.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(38, 70, 83, 0.2509803922);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
-.idb-card__image {
+.idb-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(38, 70, 83, 0.1333333333);
+}
+.idb-card .idb-card__image {
+  height: 10rem;
   object-fit: cover;
-  border-radius: 0rem 0rem 0rem 0rem;
-  height: 100%;
-  max-width: 100%;
+  width: 100%;
 }
-.idb-card__title {
+.idb-card .idb-card__body {
+  padding: 1rem 0.75rem 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.idb-card .idb-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #264653;
+}
+.idb-card .idb-card__text {
   font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 0.75rem;
 }
-.idb-card__text {
-  font-size: 0.875rem;
-  text-align: justify;
-  hyphens: auto;
+.idb-card .idb-card__cart {
+  background: #f59e42;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
 }
-.idb-card__fav {
-  background-color: white;
-  color: none;
-  border-radius: 0.3rem;
-  border-style: none;
-  border-color: none;
-  border-width: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.idb-card__fav:hover {
-  color: white;
-  background-color: rgb(229.5, 229.5, 229.5);
-  transform: scale(1.05);
-}
-.idb-card__cart {
-  background-color: #0048a0;
-  color: white;
-  border-radius: 0.3rem;
-  border-style: none;
-  border-color: none;
-  border-width: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 1.125rem;
-}
-.idb-card__cart:hover {
-  color: white;
-  background-color: rgb(0, 49.05, 109);
-  transform: scale(1.05);
-}
-.idb-card--alt {
-  width: fit-content;
-  height: fit-content;
-  max-height: none;
-}
-.idb-card--alt .idb-card__image {
-  height: 18rem;
-  max-width: 100%;
-  border-radius: 0.3rem 0.3rem 0rem 0rem;
+.idb-card .idb-card__cart:hover {
+  background: #e07c1e;
+  transform: scale(1.07);
 }
 
 .asidecard__image {
   width: 13rem;
   height: 18rem;
   object-fit: contain;
+}
+
+.idb-section {
+  background: #fff;
+  border-top: 0.12rem groove #264653;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+
+.idb-section__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #264653;
+}
+
+.idb-cart-offcanvas {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 4px 18px rgba(38, 70, 83, 0.1019607843);
+}
+.idb-cart-offcanvas__header {
+  background: #264653;
+  color: #fff;
+  border-bottom: 0.12rem solid #f59e42;
+}
+.idb-cart-offcanvas__header .idb-cart-offcanvas__title {
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin: 0;
+}
+.idb-cart-offcanvas__header .idb-cart-offcanvas__close {
+  opacity: 0.7;
+  transition: opacity 0.18s;
+}
+.idb-cart-offcanvas__body {
+  background: #fff;
+  color: #222;
+}
+.idb-cart-offcanvas__items .idb-cart-offcanvas__item {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  background: transparent;
+  color: #222;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.idb-cart-offcanvas__btn {
+  width: 100%;
+  font-weight: 600;
+  border-radius: 0.35rem;
+  font-size: 0.97rem;
+  border: none;
+}
+.idb-cart-offcanvas__btn--danger {
+  background: #f59e42;
+  color: #fff;
+}
+.idb-cart-offcanvas__btn--primary {
+  background: #264653;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
