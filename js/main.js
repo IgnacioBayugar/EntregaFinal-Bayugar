@@ -75,6 +75,9 @@
         });
         return;
       }
+      document.getElementById('nombreComprador').value = "Diana o Jesus";
+      document.getElementById('direccionComprador').value = "Av. Coder 69285";
+      document.getElementById('emailComprador').value = "DianaOJesus@random.com";
       new bootstrap.Modal(dom.modalPurchaseData).show();
     });
     dom.confirmPurchaseBtn?.addEventListener('click', () => {
