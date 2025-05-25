@@ -1,30 +1,4 @@
 (() => {
-  //carga de productos y usuarios predefinidos
-  document.addEventListener('DOMContentLoaded', async () => {
-    await loadProducts();
-    await loadPredefinedUsers();
-    init();
-  });
-  async function loadProducts() {
-    const resp = await fetch('./json/products.json');
-    products = await resp.json();
-  }
-  async function loadPredefinedUsers() {
-    const resp = await fetch('https://jsonplaceholder.typicode.com/users');
-    const predefined = await resp.json();
-    predefined.forEach(u => {
-      if (!users.some(user => user.username === u.username)) {
-        users.push({ username: u.username, password: "francia2do" });
-      }
-    });
-    saveUsers();
-  } 
-  //variables globales
-  let products = [];
-  let cart = [];
-  let users = [];
-  let datosCompra = {};
-  let currentUser = null;
   //elementos del DOM
   const dom = {
     productsSection: document.getElementById('products-section'),
@@ -49,7 +23,13 @@
     registerBtn: document.getElementById('register-btn'),
     logoutBtn: document.getElementById('logout-btn'),
   };
+
   //inicialización
+  document.addEventListener('DOMContentLoaded', async () => {
+    await loadProducts();
+    await loadPredefinedUsers();
+    init();
+  });
   function init() {
     loadState();
     bindUIEvents();
@@ -57,21 +37,7 @@
     renderCart();
     updateUserUI();
   }
-  //local storage usuario carrito
-  function loadState() {
-    cart = JSON.parse(localStorage.getItem('cart')) || [];
-    users = JSON.parse(localStorage.getItem('users')) || [];
-    currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
-  }
-  function saveCart() {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }
-  function saveUsers() {
-    localStorage.setItem('users', JSON.stringify(users));
-  }
-  function saveCurrentUser() {
-    localStorage.setItem('currentUser', JSON.stringify(currentUser));
-  }
+
   //eventos de la interfaz, alertas con sweetalert
   function bindUIEvents() {
     dom.emptyCartButton?.addEventListener('click', () => {
@@ -155,6 +121,7 @@
     dom.loginForm?.addEventListener('submit', handleLogin);
     dom.logoutBtn?.addEventListener('click', handleLogout);
   }
+
   //renderización de productos y carrito
   function renderProducts() {
     dom.productsSection.innerHTML = '';
@@ -202,6 +169,7 @@
     btn.addEventListener('click', () => addToCart({ id, name: name, price: price }));
     return col;
   }
+
   //carrito
   function addToCart(item) {
     const existing = cart.find(p => p.id === item.id);
@@ -294,6 +262,7 @@
       </div>
     `;
   }
+
   //registro e inicio de sesión
   function handleRegister(e) {
     e.preventDefault();
