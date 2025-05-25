@@ -15,7 +15,7 @@ async function loadPredefinedUsers() {
   const predefined = await resp.json();
   predefined.forEach(u => {
     if (!users.some(user => user.username === u.username)) {
-      users.push({ username: u.username, password: "francia2do" });
+      users.push({ username: u.email, password: "francia2do" });
     }
   });
   saveUsers();

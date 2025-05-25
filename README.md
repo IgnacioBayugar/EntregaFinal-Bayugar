@@ -11,7 +11,7 @@ Mi objetivo principal era simular el proceso de compra, pero tambien agregue uno
 
 **Para que pueda probar la pagina sin necesidad de registrarse** use:
 
-- **Usuario** Bret
+- **Email** Sincere@april.biz
 - **Contraseña** francia2do
 
 Desde ya muchas gracias!
