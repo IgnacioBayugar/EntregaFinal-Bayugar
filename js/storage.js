@@ -14,7 +14,7 @@ async function loadPredefinedUsers() {
   const resp = await fetch('https://jsonplaceholder.typicode.com/users');
   const predefined = await resp.json();
   predefined.forEach(u => {
-    if (!users.some(user => user.username === u.username)) {
+    if (!users.some(user => user.username === u.email)) {
       users.push({ username: u.email, password: "francia2do" });
     }
   });

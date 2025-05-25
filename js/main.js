@@ -26,8 +26,8 @@
 
   //inicialización
   document.addEventListener('DOMContentLoaded', async () => {
-    await loadProducts();
     await loadPredefinedUsers();
+    await loadProducts();
     init();
   });
   function init() {
